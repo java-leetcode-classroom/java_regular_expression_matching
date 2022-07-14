@@ -20,4 +20,21 @@ class SolutionTest {
   void isMatchExamples4() {
     assertFalse(sol.isMatch("a", "b*"));
   }
+
+  @Test
+  void isMatchV1Examples1() {
+    assertFalse(sol.isMatchV1("aa", "a"));
+  }
+  @Test
+  void isMatchV1Examples2() {
+    assertTrue(sol.isMatchV1("aa", "a*"));
+  }
+  @Test
+  void isMatchV1Examples3() {
+    assertTrue(sol.isMatchV1("ab", ".*"));
+  }
+  @Test
+  void isMatchV1Examples4() {
+    assertFalse(sol.isMatchV1("a", "b*"));
+  }
 }

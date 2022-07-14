@@ -59,4 +59,25 @@ public class Solution {
     cache.put(record, false);
     return false;
   }
+  public boolean isMatchV1(String s, String p) {
+    int sLen = s.length();
+    int pLen = p.length();
+    // dp[i][j]:  s[i:] match p[j:] or not
+    boolean[][] dp = new boolean[sLen+1][pLen+1];
+    // empty string case
+    dp[sLen][pLen] = true;
+    for (int sStart = sLen; sStart>=0; sStart--) {
+      for (int pStart = pLen - 1; pStart>=0; pStart--) {
+        boolean match = (sStart < sLen) && (s.charAt(sStart) == p.charAt(pStart) || p.charAt(pStart) == '.');
+        // pStart + 1 is *
+        if (pStart + 1 < pLen && p.charAt(pStart+1) == '*') {
+          // match or not match
+          dp[sStart][pStart] = (match && dp[sStart+1][pStart]) || dp[sStart][pStart+2];
+        } else {
+          dp[sStart][pStart] = (match && dp[sStart+1][pStart+1]);
+        }
+      }
+    }
+    return dp[0][0];
+  }
 }
