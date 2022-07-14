@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SolutionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-07-14T13:47:57" hostname="yuanyu-ubuntu" time="0.024">
+  <properties/>
+  <testcase name="isMatchExamples1()" classname="SolutionTest" time="0.018"/>
+  <testcase name="isMatchExamples2()" classname="SolutionTest" time="0.002"/>
+  <testcase name="isMatchExamples3()" classname="SolutionTest" time="0.001"/>
+  <testcase name="isMatchExamples4()" classname="SolutionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
