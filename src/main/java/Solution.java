@@ -43,7 +43,7 @@ public class Solution {
     }
     boolean match = (sIndex < sLen) &&
         (s.charAt(sIndex) == p.charAt(pIndex) || p.charAt(pIndex) == '.');
-    boolean result = false;
+    boolean result;
     if (pIndex+1 < pLen && p.charAt(pIndex+1) == '*') {
       result = (match && DFS(s, sIndex+1, p, pIndex , cache)) ||
           DFS(s, sIndex, p, pIndex+2, cache);
