@@ -114,6 +114,10 @@ match(i,j) = false otherwise
 
 比 Bruce Force 的方式 O($2^{len(s)*len(p)}$)還要好
 
+透過 tabulation 的方式
+
+![](https://i.imgur.com/m04BCqF.png)
+
 ## 程式碼
 ```java
 import java.util.HashMap;

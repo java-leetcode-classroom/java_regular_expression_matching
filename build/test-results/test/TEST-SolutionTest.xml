@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SolutionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-14T18:24:28" hostname="yuanyu-ubuntu" time="11.782">
+<testsuite name="SolutionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-07-14T18:37:06" hostname="yuanyu-ubuntu" time="0.024">
   <properties/>
-  <testcase name="isMatchV1Examples1()" classname="SolutionTest" time="11.782"/>
+  <testcase name="isMatchV1Examples1()" classname="SolutionTest" time="0.018"/>
+  <testcase name="isMatchV1Examples2()" classname="SolutionTest" time="0.001"/>
+  <testcase name="isMatchV1Examples3()" classname="SolutionTest" time="0.0"/>
+  <testcase name="isMatchV1Examples4()" classname="SolutionTest" time="0.001"/>
+  <testcase name="isMatchExamples1()" classname="SolutionTest" time="0.001"/>
+  <testcase name="isMatchExamples2()" classname="SolutionTest" time="0.001"/>
+  <testcase name="isMatchExamples3()" classname="SolutionTest" time="0.001"/>
+  <testcase name="isMatchExamples4()" classname="SolutionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
